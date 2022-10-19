@@ -1,5 +1,4 @@
 import rsa
-
 # generate public and private keys with
 # rsa.newkeys method,this method accepts
 # key length as its parameter
@@ -13,8 +12,7 @@ message = "hello geeks"
 # string with public key string should be
 # encode to byte string before encryption
 # with encode method
-encMessage = rsa.encrypt(message.encode(),
-						publicKey)
+encMessage = rsa.encrypt(message.encode(),publicKey)
 
 print("original string: ", message)
 print("encrypted string: ", encMessage)
